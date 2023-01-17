@@ -1,0 +1,7 @@
+<h1>
+	Lazy loaded infinite scroller
+</h1>
+<div class="container" infiniteScroll [infiniteScrollDistance]="0.5" (scrolled)="onScroll($event)">
+	<div *ngFor="let box of boxes" class="boxes">
+	</div>
+</div>
